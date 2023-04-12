@@ -3,8 +3,7 @@ import QuestaoModel from '../model/questao'
 import Questionario from '../components/Questionario'
 import { useRouter } from 'next/router'
 
-
-const BASE_URL = 'http://localhost:3000/api'
+const BASE_URL = `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
 
 export default function Home() {
   const router = useRouter()
